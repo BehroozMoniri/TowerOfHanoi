@@ -14,6 +14,16 @@ body {
     padding: 20px;
 }
 
+body.game-active {
+    background: #ffffff;
+}
+
+@media (min-width: 901px) {
+    body {
+        overflow: hidden;
+    }
+}
+
 /* ===== DIFFICULTY SELECTION SCREEN ===== */
 #difficulty-screen {
     display: flex;

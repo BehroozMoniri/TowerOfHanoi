@@ -524,6 +524,7 @@ function startGame(level) {
     difficultyLabel.textContent = `${difficulty.icon} ${difficulty.label}`;
     difficultyScreen.style.display = 'none';
     gameScreen.style.display = 'flex';
+    document.body.classList.add('game-active');
     resetGame();
 }
 
@@ -572,6 +573,7 @@ backToMenuBtn.addEventListener('click', () => {
     stopTimer();
     gameScreen.style.display = 'none';
     difficultyScreen.style.display = 'flex';
+    document.body.classList.remove('game-active');
 });
 winPlayAgain.addEventListener('click', resetGame);
 winClose.addEventListener('click', () => {
