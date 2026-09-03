@@ -529,7 +529,7 @@ canvas {
     }
 
     #game-container canvas {
-        height: 300px !important;
+        height: 220px !important;
     }
     
     #game-header {
@@ -582,7 +582,7 @@ canvas {
     }
 
     #game-container canvas {
-        height: 260px !important;
+        height: 190px !important;
     }
     
     #info {
