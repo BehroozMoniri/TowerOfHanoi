@@ -272,7 +272,7 @@ function drawRods() {
     ctx.clearRect(0, 0, 600, 400);
 
     // Background
-    ctx.fillStyle = '#f0f4f8';
+    ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, 600, 400);
 
     // Base
@@ -415,8 +415,11 @@ function drawRods() {
     }
 
     // Labels
+    ctx.shadowColor = 'transparent';
     ctx.shadowBlur = 0;
-    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    ctx.fillStyle = '#1f2937';
     ctx.font = '14px Arial';
     ctx.textAlign = 'center';
     Object.keys(rodPositions).forEach((rod) => {
@@ -424,7 +427,11 @@ function drawRods() {
     });
 
     // Instructions
-    ctx.fillStyle = 'rgba(0,0,0,0.45)';
+    ctx.shadowColor = 'transparent';
+    ctx.shadowBlur = 0;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    ctx.fillStyle = '#1f2937';
     ctx.font = '12px Arial';
     ctx.fillText('Click a rod to select a disk, then click another rod to move it', 300, 30);
 }
