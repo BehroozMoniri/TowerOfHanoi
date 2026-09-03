@@ -527,6 +527,10 @@ canvas {
     #game-container {
         padding: 15px;
     }
+
+    #game-container canvas {
+        height: 300px !important;
+    }
     
     #game-header {
         flex-direction: column;
@@ -575,6 +579,10 @@ canvas {
 @media (max-width: 400px) {
     #game-container {
         padding: 10px;
+    }
+
+    #game-container canvas {
+        height: 260px !important;
     }
     
     #info {
