@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="homepage">
+        <header>
+            <h1>🎮 Game Hub</h1>
+            <p>Choose your game and start playing!</p>
+        </header>
+
+        <div id="game-grid">
+            <!-- Game Card 1: Ball Drop Game -->
+            <div class="game-card">
+                <div class="game-card-image">
+                    <img src="img/Balls.png" alt="Ball Drop Game" />
+                    <div class="game-status">🎯 Popular</div>
+                </div>
+                <div class="game-card-content">
+                    <h2>Ball Drop Game</h2>
+                    <p class="game-description">
+                        Sort colored balls by dragging them between columns. 
+                        <strong>Plan your moves carefully</strong> - you can only move the 
+                        <strong>top ball</strong> from any column, and you must place it 
+                        on top of another column. The goal is to arrange all balls of 
+                        the same color into single columns. 
+                        <em>The fewer moves you make, the better your score!</em>
+                    </p>
+                    <div class="game-meta">
+                        <span class="tag puzzle">🧩 Puzzle</span>
+                        <span class="tag strategy">🎯 Strategy</span>
+                    </div>
+                    <a href="https://behroozmoniri.github.io/ball-drop-game/" class="play-btn">Play Now →</a>
+                </div>
+            </div>
+
+            <!-- Game Card 2: Towers of Hanoi -->
+            <div class="game-card">
+                <div class="game-card-image">
+                    <img class="hanoi-card-image" src="img/ToH.png" alt="Towers of Hanoi" />
+                    <div class="game-status">🏆 Classic</div>
+                </div>
+                <div class="game-card-content">
+                    <h2>Towers of Hanoi</h2>
+                    <p class="game-description">
+                        Move all disks from the left rod to the right rod. 
+                        <strong>Only one disk can be moved at a time</strong>, 
+                        and you can never place a larger disk on top of a smaller one. 
+                        Challenge yourself with different difficulty levels and 
+                        <strong>plan each move</strong> to solve the puzzle in the 
+                        fewest moves possible!
+                    </p>
+                    <div class="game-meta">
+                        <span class="tag classic">👑 Classic</span>
+                        <span class="tag logic">🧠 Logic</span>
+                    </div>
+                    <a href="https://behroozmoniri.github.io/TowerOfHanoi/" class="play-btn">Play Now →</a>
+                </div>
+            </div>
+
+            <!-- Game Card 3: Coming Soon -->
+            <div class="game-card coming-soon">
+                <div class="game-card-image">
+                    <div class="coming-soon-placeholder">
+                        <span>🎲</span>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h2>New Game</h2>
+                    <p class="game-description">
+                        A new puzzle game is being prepared. Stay tuned for more 
+                        exciting challenges!
+                    </p>
+                    <div class="game-meta">
+                        <span class="tag soon">🚀 Soon</span>
+                    </div>
+                    <button class="play-btn disabled" disabled>Coming Soon</button>
+                </div>
+            </div>
+
+            <!-- Game Card 4: Coming Soon -->
+            <div class="game-card coming-soon">
+                <div class="game-card-image">
+                    <div class="coming-soon-placeholder">
+                        <span>🎯</span>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h2>Another Game</h2>
+                    <p class="game-description">
+                        More puzzle adventures are on their way. Check back later 
+                        for new challenges!
+                    </p>
+                    <div class="game-meta">
+                        <span class="tag soon">🚀 Soon</span>
+                    </div>
+                    <button class="play-btn disabled" disabled>Coming Soon</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ | Play, Learn, and Have Fun!</p>
+        </footer>
+    </div>
+</body>
+</html>
