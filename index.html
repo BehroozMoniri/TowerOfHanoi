@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Difficulty Selection Screen -->
+    <div id="difficulty-screen">
+        <div id="difficulty-box">
+            <h1>🏰 Towers of Hanoi</h1>
+            <p class="subtitle">The classic puzzle game</p>
+            
+            <div id="instructions">
+                <h3>📖 How to Play</h3>
+                <ul>
+                    <li><strong>Objective:</strong> Move all disks from rod <strong>A</strong> to rod <strong>C</strong></li>
+                    <li>You can only move <strong>one disk</strong> at a time</li>
+                    <li>A disk can only be placed on a <strong>larger disk</strong></li>
+                    <li>💡 <em>Tip: Plan your moves carefully!</em></li>
+                </ul>
+            </div>
+            
+            <p>Select your difficulty level:</p>
+            <div id="difficulty-buttons">
+                <button class="difficulty-btn easy" data-level="easy">
+                    <span class="difficulty-icon">🟢</span>
+                    <span class="difficulty-name">Easy</span>
+                    <span class="difficulty-desc">3 disks</span>
+                </button>
+                <button class="difficulty-btn medium" data-level="medium">
+                    <span class="difficulty-icon">🟡</span>
+                    <span class="difficulty-name">Medium</span>
+                    <span class="difficulty-desc">4 disks</span>
+                </button>
+                <button class="difficulty-btn hard" data-level="hard">
+                    <span class="difficulty-icon">🔴</span>
+                    <span class="difficulty-name">Hard</span>
+                    <span class="difficulty-desc">5 disks</span>
+                </button>
+            </div>
+            <div id="best-times">
+                <div class="best-time-item">Easy: <span id="bestTimeEasy">—</span></div>
+                <div class="best-time-item">Medium: <span id="bestTimeMedium">—</span></div>
+                <div class="best-time-item">Hard: <span id="bestTimeHard">—</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" style="display:none;">
+        <div id="game-container">
+            <div id="game-header">
+                <div id="header-left">
+                    <button id="backToMenuBtn">← Menu</button>
+                    <span id="difficulty-label">Hard</span>
+                </div>
+                <div id="header-right">
+                    <span id="progress-label">Progress: 0/5</span>
+                </div>
+            </div>
+            
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            
+            <div id="controls">
+                <div id="info">
+                    <div>Moves: <span id="movesDisplay">0</span></div>
+                    <div>Time: <span id="timeDisplay">0.0</span>s</div>
+                    <div>Best: <span id="bestTimeDisplay">—</span></div>
+                </div>
+                <div class="control-group">
+                    <button id="undoBtn" disabled>↩ Undo</button>
+                    <button id="newGameBtn">New Game</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Sidebar -->
+        <div id="progress-sidebar">
+            <h3>🎯 Progress Updates</h3>
+            <div id="messages-container"></div>
+        </div>
+    </div>
+
+    <!-- Win Overlay -->
+    <div id="win-overlay">
+        <div id="win-box">
+            <h2>🎉 Congratulations!</h2>
+            <p id="winMessage"></p>
+            <p id="bestTimeMessage"></p>
+            <div class="btn-group">
+                <button id="winPlayAgain">Play Again</button>
+                <button id="winClose">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
