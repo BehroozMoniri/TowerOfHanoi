@@ -59,6 +59,18 @@ body {
     font-size: 16px;
 }
 
+.hub-link {
+    display: inline-block;
+    color: #4a6fa5;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.hub-link:hover {
+    text-decoration: underline;
+}
+
 /* ===== INSTRUCTIONS ===== */
 #instructions {
     background: #f7fafc;
@@ -233,6 +245,11 @@ body {
 
 #game-header button:hover {
     background: #4a5568;
+}
+
+#game-header .hub-link {
+    margin-bottom: 0;
+    font-size: 13px;
 }
 
 #difficulty-label {
