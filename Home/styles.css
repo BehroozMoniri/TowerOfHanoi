@@ -182,12 +182,13 @@ header p {
     text-align: center;
     align-self: flex-start;
 }
-.turtle-image{
+.turtle-image {
     width: auto;
-    height: 92%;
-    max-width: 92%;
-    max-height: 92%;
+    height: 88%;
+    max-width: 88%;
+    max-height: 88%;
     object-fit: contain;
+    display: block;
 }
 .play-btn:hover {
     transform: scale(1.05);
