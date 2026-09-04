@@ -184,7 +184,7 @@ header p {
 }
 .turtle-image {
     width: auto;
-    height: 88%;
+    height: 100%;
     max-width: 88%;
     max-height: 88%;
     object-fit: contain;
