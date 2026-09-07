@@ -189,6 +189,7 @@ header p {
     max-height: 88%; 
     object-fit: contain;
     display: block;
+    border-radius: 5px;
 }
 .play-btn:hover {
     transform: scale(1.05);
