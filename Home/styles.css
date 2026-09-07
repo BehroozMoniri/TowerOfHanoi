@@ -190,6 +190,7 @@ header p {
     object-fit: contain;
     display: block;
     border-radius: 5px;
+    transition: transform 0.3s ease;
 }
 .play-btn:hover {
     transform: scale(1.05);
